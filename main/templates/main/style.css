@@ -81,7 +81,6 @@
   .marquee-slider {
     max-width: 1200px;
     margin: 15px auto;
-    outline: 1px solid red;
     display: flex;
     padding: 5px;
     position: relative;
@@ -96,5 +95,45 @@
       clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
       -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
     }
+    marquee {
+      display: flex;
+      align-items: center;
+    }
+    .marquee-item {
+      display: inline-block;
+      margin: auto;
+      margin: 0 10px;
+      font-size: 0.9rem;
+      font-weight: 500;
+
+      i {
+        color: white;
+        background-color: orangered;
+        font-size: small;
+        padding: 5px 6px;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .swiper {
+    max-width: 1200px;
+    height: 500px;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
