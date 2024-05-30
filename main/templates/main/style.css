@@ -4,6 +4,7 @@
 }
 
 .content-main {
+  overflow-x: hidden;
   .whole-nav-wrapper {
     .navbar-1-wrapper,
     .navbar-2-wrapper {
@@ -33,6 +34,11 @@
 
       padding: 15px;
 
+      .logo-img {
+        /* height: 50px; */
+        display: none;
+      }
+
       .bottom-bar-links {
         .link {
           text-decoration: none;
@@ -58,6 +64,9 @@
         border-bottom: 1px solid gray;
         margin-left: 20px;
       }
+      .menu-btn {
+        display: none;
+      }
       .btn {
         background-color: white;
       }
@@ -76,11 +85,43 @@
         display: block;
       }
     }
+
+    @media screen and (max-width: 1080px) {
+      .bottom-bar-links .link {
+        display: none;
+      }
+      .navbar-2-wrapper {
+        .logo-img {
+          display: block;
+        }
+        .menu-btn {
+          display: block;
+          padding: 10px;
+          margin-left: 20px;
+          i {
+            color: white;
+            font-size: 2rem;
+          }
+        }
+      }
+      .navbar-1-wrapper {
+        display: none;
+      }
+    }
+
+    @media screen and (max-width: 576px) {
+      .navbar-2-wrapper {
+        .search-field,
+        .btn {
+          display: none;
+        }
+      }
+    }
   }
 
   .marquee-slider {
     max-width: 1200px;
-    margin: 15px auto;
+    margin: 8px auto;
     display: flex;
     padding: 5px;
     position: relative;
@@ -118,7 +159,7 @@
 
   .swiper {
     max-width: 1200px;
-    height: 500px;
+    height: 400px;
   }
 
   .swiper-slide {
@@ -135,5 +176,48 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .imp-buttons {
+    max-width: 1200px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 10px;
+    .imp-button {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      flex: 1;
+      padding: 25px 0;
+      border-radius: 3px;
+      display: flex;
+      justify-content: center;
+
+      a {
+        text-decoration: none;
+        color: var(--primary-color-dark);
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+
+        i {
+          font-size: 1.8rem;
+          margin-right: 10px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 910px) {
+    .imp-buttons {
+      flex-direction: column;
+
+      justify-content: flex-start;
+      gap: 10px;
+      .imp-button {
+        padding-left: 20px;
+        justify-content: flex-start;
+      }
+    }
   }
 }
