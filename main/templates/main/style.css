@@ -1,0 +1,100 @@
+:root {
+  --primary-color-dark: #077531;
+  --primary-color-light: #098638;
+}
+
+.content-main {
+  .whole-nav-wrapper {
+    .navbar-1-wrapper,
+    .navbar-2-wrapper {
+      position: relative;
+      .bg-transparent {
+        background-color: transparent;
+      }
+      .logo-img {
+        height: 50px;
+      }
+
+      .top-bar-link {
+        text-decoration: none;
+        color: white;
+      }
+      .top-bar-link:hover {
+        color: orange;
+      }
+    }
+    .navbar-1-wrapper {
+      background-color: var(--primary-color-light);
+
+      padding: 11px 10px;
+    }
+    .navbar-2-wrapper {
+      background-color: var(--primary-color-dark);
+
+      padding: 15px;
+
+      .bottom-bar-links {
+        .link {
+          text-decoration: none;
+          color: white;
+          font-size: 0.9rem;
+          font-weight: 500;
+        }
+        .link:hover {
+          color: orange;
+        }
+        .link-active {
+          color: orange;
+          text-decoration: underline;
+        }
+      }
+      .search-field {
+        background-color: transparent;
+        outline: none;
+        border: none;
+        color: white;
+        text-align: end;
+        padding-right: 20px;
+        border-bottom: 1px solid gray;
+        margin-left: 20px;
+      }
+      .btn {
+        background-color: white;
+      }
+      .link-desc {
+        position: absolute;
+        background-color: var(--primary-color-dark);
+        transform: translateX(-50%);
+        left: 50%;
+        width: 80%;
+      }
+      .desc-hidden {
+        display: none;
+      }
+
+      .link:hover .link-desc {
+        display: block;
+      }
+    }
+  }
+
+  .marquee-slider {
+    max-width: 1200px;
+    margin: 15px auto;
+    outline: 1px solid red;
+    display: flex;
+    padding: 5px;
+    position: relative;
+    .marquee-head {
+      background-color: var(--primary-color-dark);
+      padding: 10px;
+      padding-right: 20px;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+      font-size: 0.9rem;
+      clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+      -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+    }
+  }
+}
