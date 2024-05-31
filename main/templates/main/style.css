@@ -260,6 +260,41 @@
     font-weight: bold;
   }
 
+  .swiper-button-prev::after {
+    content: "<i class=" fa fa-arrow-left " ></i>";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding-left: 15px;
+    padding-top: 12px;
+    margin-left: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.296);
+    z-index: -2;
+  }
+  .swiper-button-next::after {
+    content: "<i class=" fa fa-arrow-left " ></i>";
+    position: absolute;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    padding-left: 18px;
+    padding-top: 12px;
+    margin-right: 5px;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 1.6rem;
+    background-color: rgba(0, 0, 0, 0.256);
+    backdrop-filter: blur(5px);
+  }
+
+  .swiper-button-disabled {
+    display: none;
+  }
+
   @media screen and (max-width: 910px) {
     .imp-buttons {
       flex-direction: column;
