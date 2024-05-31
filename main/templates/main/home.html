@@ -1,1 +1,341 @@
 {% extends 'main/base.html' %}
+{% load static %}
+
+
+{% block title %}
+Navodaya
+
+{% endblock title %}
+
+{% block links %}
+<link rel="stylesheet" href="{% static 'main/style.css' %}" />
+
+<!-- swiper js  -->
+<link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+<!-- swiper js  -->
+
+
+{% endblock links %}
+
+
+{% block main-content %}
+<div class="content-main">
+    <div class="whole-nav-wrapper">
+      <div class="navbar-1-wrapper">
+        <nav class="bg-transparent">
+          <div
+            class="container-fluid d-flex align-items-center justify-content-between"
+            style="max-width: 1200px"
+          >
+            <div class="logo-wrapper">
+              <img src="{% static 'main/images/demo-logo.jpg' %}" class="logo-img" alt="" />
+            </div>
+
+            <div class="d-flex gap-5 top-bar-links">
+              <a class="top-bar-link" href="">
+                <i class="fa fa-sign-in"></i>
+                Register</a
+              >
+              <a class="top-bar-link" href="">
+                <i class="fa fa-sign-in"></i>
+
+                EBanking Login</a
+              >
+              <a class="top-bar-link" href="">
+                <i class="fa fa-database"></i>
+
+                Forex</a
+              >
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="navbar-2-wrapper">
+        <nav class="bg-transparent">
+          <div
+            class="container-fluid d-flex align-items-center justify-content-between"
+            style="max-width: 1200px"
+          >
+            <div class="logo-wrapper">
+              <img src="{% static 'main/images/demo-logo.jpg' %}" class="logo-img" alt="" />
+            </div>
+            <div
+              class="d-flex justify-content-between bottom-bar-links"
+              style="flex: 1"
+            >
+              <a class="link link-active" href="">Home</a>
+              <a class="link" href="">About Us</a>
+              <a class="link" href="">Services</a>
+              <a class="link" href="">Information</a>
+              <a class="link" href="">Reports</a>
+              <a class="link" href="">Member Survey</a>
+              <a class="link" href="">Careers</a>
+              <a class="link" href="">Loan Form</a>
+              <a class="link" href="">Contact Us</a>
+            </div>
+
+            <div class="search">
+              <form action="" method="get" class="d-flex">
+                <input
+                  type="text"
+                  placeholder="Search"
+                  name="search_text"
+                  class="search-field"
+                />
+                <button class="btn">
+                  <i class="fa fa-search"></i>
+                </button>
+              </form>
+            </div>
+
+            <div class="menu-btn">
+              <i class="fa fa-bars"></i>
+
+              <div class="menu">
+                <div class="logo-wrapper">
+                  <img src="{% static 'main/images/demo-logo.jpg' %}" class="logo-img" alt="" />
+                </div>
+                <br />
+                <a href="">
+                  <i class="fa fa-home"></i>
+                  Home</a
+                >
+                <a href="">
+                  <i class="fa fa-info-circle"></i>
+                  About Us</a
+                >
+                <a href="">
+                  <i class="fa fa-cogs"></i>
+                  Services</a
+                >
+                <a href="">
+                  <i class="fa fa-info-circle"></i>
+
+                  Information</a
+                >
+                <a href="">
+                  <i class="fa fa-address-book"></i>
+                  Reports</a
+                >
+                <a href="">
+                  <i class="fa fa-question"></i>
+                  Member Survey</a
+                >
+                <a href="">
+                  <i class="fa fa-users"></i>
+                  Careers</a
+                >
+                <a href="">
+                  <i class="fa fa-book"></i>
+                  Loan Form</a
+                >
+                <a href="">
+                  <i class="fa fa-phone"></i>
+                  Contact Us</a
+                >
+              </div>
+            </div>
+          </div>
+        </nav>
+        <div class="link-desc desc-hidden">some data</div>
+      </div>
+    </div>
+
+    <div class="marquee-slider">
+      <div class="marquee-head">Notices</div>
+      <marquee class="" behavior="scroll" direction="">
+        <div class="marquee-item">
+          <i class="fa fa-arrow-right"></i>
+          headline1
+        </div>
+        <div class="marquee-item">
+          <i class="fa fa-arrow-right"></i>
+          headline1
+        </div>
+        <div class="marquee-item">
+          <i class="fa fa-arrow-right"></i>
+          headline1
+        </div>
+        <div class="marquee-item">
+          <i class="fa fa-arrow-right"></i>
+          headline1
+        </div>
+        <div class="marquee-item">
+          <i class="fa fa-arrow-right"></i>
+          headline1
+        </div>
+        <div class="marquee-item">
+          <i class="fa fa-arrow-right"></i>
+          headline1
+        </div>
+        <div class="marquee-item">
+          <i class="fa fa-arrow-right"></i>
+          headline1
+        </div>
+        <div class="marquee-item">
+          <i class="fa fa-arrow-right"></i>
+          headline1
+        </div>
+        <div class="marquee-item">
+          <i class="fa fa-arrow-right"></i>
+          headline1
+        </div>
+        <div class="marquee-item">
+          <i class="fa fa-arrow-right"></i>
+          headline1
+        </div>
+      </marquee>
+    </div>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="{% static 'main/images/demo-img-1.webp' %}" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'main/images/demo-img-2.webp' %}" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="{% static 'main/images/demo-img-3.jpg' %}" alt="" />
+        </div>
+        ...
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <!-- imp buttons -->
+    <div class="imp-buttons row">
+      <div class="col">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="imp-button">
+              <a href="">
+                <i class="fa fa-university"></i>
+
+                360 Banking Service</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="imp-button">
+              <a href="">
+                <i class="fa fa-commenting-o"></i>
+
+                SMS Banking</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="imp-button">
+              <a href="">
+                <i class="fa fa-credit-card"></i>
+                Make Payments</a
+              >
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="imp-button">
+              <a href="">
+                <i class="fa fa-desktop"></i>
+                Online Banking</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- showing right products for you  -->
+    <div class="right-products">
+      <div class="left-img">
+        <img src="{% static 'main/images/left1.png' %}" alt="" />
+      </div>
+      <div class="right-img">
+        <img src="{% static 'main/images/right1.png' %}" alt="" />
+      </div>
+      <div class="products-content">
+        <div class="content-heading">
+          Presenting products and <br />
+          services that are right for you
+        </div>
+
+        <div class="row my-3 mt-4">
+          <div class="col-sm-6 mb-4">
+            <img src="{% static 'main/images/clarity_savings-line.svg' %}" alt="" />
+            <p class="text-bold text-white">Deposit</p>
+
+            <p class="desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Tempore est nobis labore quisquam recusandae impedit.
+              Laboriosam, harum illum magni ad provident atque officia, iste
+              reiciendis recusandae, illo voluptate alias ipsam minima fugit.
+            </p>
+          </div>
+          <div class="col-sm-6 mb-4">
+            <img src="{% static 'main/images/loan 1.svg' %}" alt="" />
+            <p class="text-bold text-white">Loan</p>
+            <p class="desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Tempore est nobis labore quisquam recusandae impedit.
+              Laboriosam, harum illum magni ad provident atque officia, iste
+              reiciendis recusandae, illo voluptate alias ipsam minima fugit.
+            </p>
+          </div>
+        </div>
+
+        <div class="row mb-5">
+          <div class="col-sm-6">
+            <img src="{% static 'main/images/Vector.svg' %}" alt="" />
+            <p class="text-bold text-white">Remittance</p>
+            <p class="desc">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Tempore est nobis labore quisquam recusandae impedit.
+              Laboriosam, harum illum magni ad provident atque officia, iste
+              reiciendis recusandae, illo voluptate alias ipsam minima fugit.
+            </p>
+          </div>
+          <div class="col-sm-6">
+            <img src="{% static 'main/images/Vector.png' %}" alt="" />
+            <p class="text-bold text-white">Other Services</p>
+            <p class="desc">
+              वित्तीय योजना, सामुदायिक कार्यक्रमहरू, शैक्षिक कार्यशालाहरू,
+              स्वयंसेवक अवसरहरू, सदस्यहरूको वकालत, स्रोत साझेदारी, नेटवर्किङ,
+              र सहकारी विकासले सदस्यहरूलाई सामूहिक सफलताको लागि सशक्त बनाउँछ।
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock main-content %}
+
+
+{% block scripts %}
+<!-- swiper js  -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="{% static 'main/swiper.js' %}"></script>
+<!-- swiper js  -->
+
+<!-- navbar.js  -->
+<script src="{% static 'main/nav.js' %}"></script>
+<!-- navbar.js  -->
+
+{% endblock scripts %}
