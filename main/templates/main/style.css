@@ -67,6 +67,46 @@
       .menu-btn {
         display: none;
       }
+
+      .menu {
+        position: fixed;
+        background-color: var(--primary-color-dark);
+        height: 100vh;
+        z-index: 1000;
+        padding: 20px;
+        top: 0;
+        left: -60vw;
+        width: 60vw;
+        /* display: flex; */
+        /* display: none; */
+        flex-direction: column;
+        gap: 5px;
+        box-shadow: 2px 0 5px 2px rgba(0, 0, 0, 0.442);
+        transition: all 0.2s ease;
+
+        a {
+          color: white;
+          text-decoration: none;
+          padding: 10px;
+          display: flex;
+          align-items: center;
+          gap: 25px;
+
+          i {
+            font-size: 1.5rem;
+          }
+        }
+        a:hover {
+          color: orange;
+          background-color: rgba(0, 0, 0, 0.199);
+        }
+      }
+
+      .menu-active {
+        /* display: flex; */
+        left: 0;
+      }
+
       .btn {
         background-color: white;
       }
