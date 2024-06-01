@@ -1,0 +1,42 @@
+.short-intro {
+  width: 100vw;
+  background-color: azure;
+  padding: 30px;
+
+  .content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .intro-heading {
+      font-size: 1.5rem;
+
+      font-weight: bold;
+      color: var(--primary-color-dark);
+      position: relative;
+    }
+    .intro-heading::after {
+      content: "";
+      height: 1.8px;
+      background-color: orange;
+      width: 150px;
+      position: absolute;
+      left: 0;
+      bottom: -10px;
+    }
+    .main-img {
+      height: 300px;
+      width: 400px;
+      border-radius: 50%;
+
+      img {
+        height: inherit;
+        width: inherit;
+        object-fit: cover;
+        border-radius: 6px;
+      }
+    }
+  }
+}

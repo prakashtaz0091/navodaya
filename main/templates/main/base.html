@@ -31,8 +31,142 @@
   </head>
   <body>
     
-    {% block main-content %}
-    {% endblock main-content %}
+<div class="content-main">
+  <div class="whole-nav-wrapper">
+    <div class="navbar-1-wrapper">
+      <nav class="bg-transparent">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-between"
+          style="max-width: 1200px"
+        >
+          <div class="logo-wrapper">
+            <img src="{% static 'main/images/demo-logo.jpg' %}" class="logo-img" alt="" />
+          </div>
+
+          <div class="d-flex gap-5 top-bar-links">
+            <div class="d-flex flex-column ">
+              <a class="top-bar-link" href="">
+                <i class="fa fa-phone me-2"></i>
+                Toll Free- 16602345221
+              </a
+              >
+              <a class="top-bar-link" href="">
+                <i class="fa fa-inbox me-2"></i>
+  
+                info@navodaya.com.np</a
+              >
+            </div>
+            <div class="d-flex flex-column ">
+              <a class="top-bar-link" href="">
+                <i class="fa fa-sign-in me-2"></i>
+                Register</a
+              >
+              <a class="top-bar-link" href="">
+                <i class="fa fa-sign-in me-2"></i>
+  
+                EBanking Login</a
+              >
+            </div>
+            
+            
+          </div>
+        </div>
+      </nav>
+    </div>
+    <div class="navbar-2-wrapper">
+      <nav class="bg-transparent">
+        <div
+          class="container-fluid d-flex align-items-center justify-content-between"
+          style="max-width: 1200px"
+        >
+          <div class="logo-wrapper">
+            <img src="{% static 'main/images/demo-logo.jpg' %}" class="logo-img" alt="" />
+          </div>
+          <div
+            class="d-flex justify-content-between bottom-bar-links"
+            style="flex: 1"
+          >
+            <a class="link link-active" href="">Home</a>
+            <a class="link" href="">About Us</a>
+            <a class="link" href="">Services</a>
+            <a class="link" href="">Information</a>
+            <a class="link" href="">Reports</a>
+            <a class="link" href="">Member Survey</a>
+            <a class="link" href="">Careers</a>
+            <a class="link" href="">Loan Form</a>
+            <a class="link" href="">Contact Us</a>
+          </div>
+
+          <div class="search">
+            <form action="" method="get" class="d-flex">
+              <input
+                type="text"
+                placeholder="Search"
+                name="search_text"
+                class="search-field"
+              />
+              <button class="btn">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+
+          <div class="menu-btn">
+            <i class="fa fa-bars"></i>
+
+            <div class="menu">
+              <div class="logo-wrapper">
+                <img src="{% static 'main/images/demo-logo.jpg' %}" class="logo-img" alt="" />
+              </div>
+              <br />
+              <a href="">
+                <i class="fa fa-home"></i>
+                Home</a
+              >
+              <a href="">
+                <i class="fa fa-info-circle"></i>
+                About Us</a
+              >
+              <a href="">
+                <i class="fa fa-cogs"></i>
+                Services</a
+              >
+              <a href="">
+                <i class="fa fa-info-circle"></i>
+
+                Information</a
+              >
+              <a href="">
+                <i class="fa fa-address-book"></i>
+                Reports</a
+              >
+              <a href="">
+                <i class="fa fa-question"></i>
+                Member Survey</a
+              >
+              <a href="">
+                <i class="fa fa-users"></i>
+                Careers</a
+              >
+              <a href="">
+                <i class="fa fa-book"></i>
+                Loan Form</a
+              >
+              <a href="">
+                <i class="fa fa-phone"></i>
+                Contact Us</a
+              >
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="link-desc desc-hidden">some data</div>
+    </div>
+  </div>
+  {% block maincontent %}{% endblock maincontent %}
+</div>
+    
+    
 
     <!-- Optional JavaScript; choose one of the two! -->
 
