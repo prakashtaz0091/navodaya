@@ -114,7 +114,7 @@ Navodaya
       <div class="col-md-6">
         <div class="imp-button">
           <a href="">
-            <img src="{% static 'main/images/speech-bubble.gif' %}" alt="Banking" height="50" width="50">
+            <img src="{% static 'main/images/speech-bubble.gif' %}" alt="SMS" height="50" width="50">
 
 
             SMS Banking</a
@@ -128,7 +128,7 @@ Navodaya
       <div class="col-md-6">
         <div class="imp-button">
           <a href="">
-            <img src="{% static 'main/images/wallet.gif' %}" alt="Banking" height="50" width="50">
+            <img src="{% static 'main/images/wallet.gif' %}" alt="Payemnts" height="50" width="50">
             Make Payments</a
           >
         </div>
@@ -136,7 +136,7 @@ Navodaya
       <div class="col-md-6">
         <div class="imp-button">
           <a href="">
-            <img src="{% static 'main/images/laptop.gif' %}" alt="Banking" height="50" width="50">
+            <img src="{% static 'main/images/laptop.gif' %}" alt="Online Banking" height="50" width="50">
 
             Online Banking</a
           >
@@ -155,6 +155,8 @@ Navodaya
         </div>
         <div class="intro-content mt-5">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium ad aliquam possimus reiciendis asperiores animi perferendis nobis deleniti molestias? Consequatur voluptas iure deleniti, a fuga soluta! Numquam aut facere, vitae temporibus, maiores hic doloremque iste corporis placeat atque quasi?
+          <br> <br>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto illum exercitationem ipsum similique asperiores, est, voluptate libero blanditiis qui, laudantium sed alias eius delectus repellendus voluptatum! Explicabo at eius ullam voluptatibus?
         </div>
         <a href="" class="btn btn-success mt-5">More</a>
       </div>
@@ -173,7 +175,7 @@ Navodaya
           Managing Director, Navodaya
 
           <br>
-          <i class="fa fa-inbox"></i> <a href="mailto:contact@kamal.com.np">contact@kamal.com.np</a>
+           <a href="mailto:contact@kamal.com.np"><i class="fa fa-inbox me-2"></i>contact@kamal.com.np</a>
         </div>
 
       </div>
@@ -185,6 +187,9 @@ Navodaya
 
   
 </div>
+
+
+
 
 <!-- showing right products for you  -->
 <div class="right-products">
@@ -253,6 +258,35 @@ Navodaya
     </div>
   </div>
 </div>
+
+
+  {% comment %} image gallery {% endcomment %}
+
+  <div class="gallery d-flex flex-column">
+    <div class="content">
+
+      <div class="intro-heading">
+        Gallery
+      </div>
+      <div class="gallery-row-1">
+        <div class="img-wrapper-1">
+          <img src="{% static 'main/images/img-gallery-1.webp' %}" alt="">
+        </div>
+        <div class="img-wrapper-2">
+          <img src="{% static 'main/images/img-gallery-5.webp' %}" alt="">
+        </div>
+      </div>
+      <div class="gallery-row-2">
+        <div class="img-wrapper-3">
+          <img src="{% static 'main/images/img-gallery-3.webp' %}" alt="">
+        </div>
+        <div class="img-wrapper-4">
+          <img src="{% static 'main/images/img-gallery-4.webp' %}" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
 {% endblock maincontent %}
 
 
