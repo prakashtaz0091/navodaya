@@ -1,303 +1,262 @@
 {% extends 'main/base.html' %}
 {% load static %}
 
-
 {% block title %}
-Navodaya
-
-{% endblock title %}
+  Navodaya
+{% endblock %}
 
 {% block links %}
-<link rel="stylesheet" href="{% static 'main/style.css' %}" />
+  <link rel="stylesheet" href="{% static 'main/style.css' %}" />
 
-<link rel="stylesheet" href="{% static 'main/home.css' %}">
+  <link rel="stylesheet" href="{% static 'main/home.css' %}" />
 
-<!-- swiper js  -->
-<link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
-<!-- swiper js  -->
+  <!-- swiper js -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- swiper js -->
 
-
-{% endblock links %}
-
+  <!-- news events css -->
+  <link rel="stylesheet" href="{% static 'main/sections/css/news_events.css' %}" />
+  <!-- news events css -->
+{% endblock %}
 
 {% block maincontent %}
-
-<div class="marquee-slider">
-  <div class="marquee-head">Notices</div>
-  <marquee class="" behavior="scroll" direction="">
-    <div class="marquee-item">
-      <i class="fa fa-arrow-right"></i>
-      headline1
-    </div>
-    <div class="marquee-item">
-      <i class="fa fa-arrow-right"></i>
-      headline1
-    </div>
-    <div class="marquee-item">
-      <i class="fa fa-arrow-right"></i>
-      headline1
-    </div>
-    <div class="marquee-item">
-      <i class="fa fa-arrow-right"></i>
-      headline1
-    </div>
-    <div class="marquee-item">
-      <i class="fa fa-arrow-right"></i>
-      headline1
-    </div>
-    <div class="marquee-item">
-      <i class="fa fa-arrow-right"></i>
-      headline1
-    </div>
-    <div class="marquee-item">
-      <i class="fa fa-arrow-right"></i>
-      headline1
-    </div>
-    <div class="marquee-item">
-      <i class="fa fa-arrow-right"></i>
-      headline1
-    </div>
-    <div class="marquee-item">
-      <i class="fa fa-arrow-right"></i>
-      headline1
-    </div>
-    <div class="marquee-item">
-      <i class="fa fa-arrow-right"></i>
-      headline1
-    </div>
-  </marquee>
-</div>
-
-<!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">
-      <img src="{% static 'main/images/demo-img-1.webp' %}" alt="" />
-    </div>
-    <div class="swiper-slide">
-      <img src="{% static 'main/images/demo-img-2.webp' %}" alt="" />
-    </div>
-    <div class="swiper-slide">
-      <img src="{% static 'main/images/demo-img-3.jpg' %}" alt="" />
-    </div>
-    ...
+  <div class="marquee-slider">
+    <div class="marquee-head">Notices</div>
+    <marquee class="" behavior="scroll" direction="">
+      <div class="marquee-item">
+        <i class="fa fa-arrow-right"></i>
+        headline1
+      </div>
+      <div class="marquee-item">
+        <i class="fa fa-arrow-right"></i>
+        headline1
+      </div>
+      <div class="marquee-item">
+        <i class="fa fa-arrow-right"></i>
+        headline1
+      </div>
+      <div class="marquee-item">
+        <i class="fa fa-arrow-right"></i>
+        headline1
+      </div>
+      <div class="marquee-item">
+        <i class="fa fa-arrow-right"></i>
+        headline1
+      </div>
+      <div class="marquee-item">
+        <i class="fa fa-arrow-right"></i>
+        headline1
+      </div>
+      <div class="marquee-item">
+        <i class="fa fa-arrow-right"></i>
+        headline1
+      </div>
+      <div class="marquee-item">
+        <i class="fa fa-arrow-right"></i>
+        headline1
+      </div>
+      <div class="marquee-item">
+        <i class="fa fa-arrow-right"></i>
+        headline1
+      </div>
+      <div class="marquee-item">
+        <i class="fa fa-arrow-right"></i>
+        headline1
+      </div>
+    </marquee>
   </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
 
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
-
-<!-- imp buttons -->
-<div class="imp-buttons row">
-  <div class="col">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="imp-button">
-          <a href="">
-            <img src="{% static 'main/images/online-banking.gif' %}" alt="Banking" height="50" width="50">
-
-            360 Banking Service</a
-          >
-        </div>
+  <!-- Slider main container -->
+  <div class="swiper">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="{% static 'main/images/demo-img-1.webp' %}" alt="" />
       </div>
-      <div class="col-md-6">
-        <div class="imp-button">
-          <a href="">
-            <img src="{% static 'main/images/speech-bubble.gif' %}" alt="SMS" height="50" width="50">
+      <div class="swiper-slide">
+        <img src="{% static 'main/images/demo-img-2.webp' %}" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="{% static 'main/images/demo-img-3.jpg' %}" alt="" />
+      </div>...
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
 
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
 
-            SMS Banking</a
-          >
+    <!-- If we need scrollbar -->
+    <div class="swiper-scrollbar"></div>
+  </div>
+
+  <!-- imp buttons -->
+  <div class="imp-buttons row">
+    <div class="col">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="imp-button">
+            <a href="">
+              <img src="{% static 'main/images/online-banking.gif' %}" alt="Banking" height="50" width="50" />
+
+              360 Banking Service
+            </a>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="imp-button">
+            <a href="">
+              <img src="{% static 'main/images/speech-bubble.gif' %}" alt="SMS" height="50" width="50" />
+
+              SMS Banking
+            </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="col">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="imp-button">
-          <a href="">
-            <img src="{% static 'main/images/wallet.gif' %}" alt="Payemnts" height="50" width="50">
-            Make Payments</a
-          >
+    <div class="col">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="imp-button">
+            <a href="">
+              <img src="{% static 'main/images/wallet.gif' %}" alt="Payemnts" height="50" width="50" />
+              Make Payments
+            </a>
+          </div>
         </div>
-      </div>
-      <div class="col-md-6">
-        <div class="imp-button">
-          <a href="">
-            <img src="{% static 'main/images/laptop.gif' %}" alt="Online Banking" height="50" width="50">
+        <div class="col-md-6">
+          <div class="imp-button">
+            <a href="">
+              <img src="{% static 'main/images/laptop.gif' %}" alt="Online Banking" height="50" width="50" />
 
-            Online Banking</a
-          >
+              Online Banking
+            </a>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
-<div class="short-intro" >
-  <div class="content">
-    <div class="d-flex flex-wrap flex-wrap-md-nowrap gap-3">
-      <div class="intro-content-wrapper">
-        <div class="intro-heading">
-          Introduction
-        </div>
-        <div class="intro-content mt-5" >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium ad aliquam possimus reiciendis asperiores animi perferendis nobis deleniti molestias? Consequatur voluptas iure deleniti, a fuga soluta! Numquam aut facere, vitae temporibus, maiores hic doloremque iste corporis placeat atque quasi?
-          <br> <br>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto illum exercitationem ipsum similique asperiores, est, voluptate libero blanditiis qui, laudantium sed alias eius delectus repellendus voluptatum! Explicabo at eius ullam voluptatibus?
-        </div>
-        <a href="" class="btn btn-success text-white mt-5">More</a>
-      </div>
-
-      <div class="d-flex flex-column align-items-center justify-content-center">
-        <div class="main-img d-flex justify-content-center">
-
-          <img src="{% static 'main/images/person.webp' %}" alt="">
-
-         
-
-        </div>
-        <div class="my-2 text-center ">
-          <strong>Mr. Kamal Thapa</strong>
-          <br>
-          Managing Director, Navodaya
-
-          <br>
-           <a href="mailto:contact@kamal.com.np"><i class="fa fa-inbox me-2"></i>contact@kamal.com.np</a>
+  <div class="short-intro">
+    <div class="content">
+      <div class="d-flex flex-wrap flex-wrap-md-nowrap gap-3">
+        <div class="intro-content-wrapper">
+          <div class="intro-heading">Introduction</div>
+          <div class="intro-content mt-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae laudantium ad aliquam possimus reiciendis asperiores animi perferendis nobis deleniti molestias? Consequatur voluptas iure deleniti, a fuga soluta! Numquam aut facere, vitae temporibus, maiores hic doloremque iste corporis placeat atque quasi?
+            <br /> <br />
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit architecto illum exercitationem ipsum similique asperiores, est, voluptate libero blanditiis qui, laudantium sed alias eius delectus repellendus voluptatum! Explicabo at eius ullam voluptatibus?
+          </div>
+          <a href="" class="btn btn-success text-white mt-5">More</a>
         </div>
 
-      </div>
+        <div class="d-flex flex-column align-items-center justify-content-center">
+          <div class="main-img d-flex justify-content-center">
+            <img src="{% static 'main/images/person.webp' %}" alt="" />
+          </div>
+          <div class="my-2 text-center">
+            <strong>Mr. Kamal Thapa</strong>
+            <br />
+            Managing Director, Navodaya
 
-
-    </div>
-    
-  </div>
-
-  
-</div>
-
-
-
-
-<!-- showing right products for you  -->
-<div class="right-products">
-  <div class="left-img">
-    <img src="{% static 'main/images/left1.png' %}" alt="" />
-  </div>
-  <div class="right-img">
-    <img src="{% static 'main/images/right1.png' %}" alt="" />
-  </div>
-
-
-
-
-
-  
-  <div class="products-content">
-    <div class="content-heading">
-      Presenting products and <br />
-      services that are right for you
-    </div>
-
-    <div class="row my-3 mt-4">
-      <div class="col-sm-6 mb-4">
-        <img src="{% static 'main/images/clarity_savings-line.svg' %}" alt="" />
-        <p class="text-bold text-white">Deposit</p>
-
-        <p class="desc">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Tempore est nobis labore quisquam recusandae impedit.
-          Laboriosam, harum illum magni ad provident atque officia, iste
-          reiciendis recusandae, illo voluptate alias ipsam minima fugit.
-        </p>
-      </div>
-      <div class="col-sm-6 mb-4">
-        <img src="{% static 'main/images/loan 1.svg' %}" alt="" />
-        <p class="text-bold text-white">Loan</p>
-        <p class="desc">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Tempore est nobis labore quisquam recusandae impedit.
-          Laboriosam, harum illum magni ad provident atque officia, iste
-          reiciendis recusandae, illo voluptate alias ipsam minima fugit.
-        </p>
-      </div>
-    </div>
-
-    <div class="row mb-5">
-      <div class="col-sm-6">
-        <img src="{% static 'main/images/Vector.svg' %}" alt="" />
-        <p class="text-bold text-white">Remittance</p>
-        <p class="desc">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Tempore est nobis labore quisquam recusandae impedit.
-          Laboriosam, harum illum magni ad provident atque officia, iste
-          reiciendis recusandae, illo voluptate alias ipsam minima fugit.
-        </p>
-      </div>
-      <div class="col-sm-6">
-        <img src="{% static 'main/images/Vector.png' %}" alt="" />
-        <p class="text-bold text-white">Other Services</p>
-        <p class="desc">
-          वित्तीय योजना, सामुदायिक कार्यक्रमहरू, शैक्षिक कार्यशालाहरू,
-          स्वयंसेवक अवसरहरू, सदस्यहरूको वकालत, स्रोत साझेदारी, नेटवर्किङ,
-          र सहकारी विकासले सदस्यहरूलाई सामूहिक सफलताको लागि सशक्त बनाउँछ।
-        </p>
+            <br />
+            <a href="mailto:contact@kamal.com.np"><i class="fa fa-inbox me-2"></i>contact@kamal.com.np</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
+  <!-- showing right products for you -->
+  <div class="right-products">
+    <div class="left-img">
+      <img src="{% static 'main/images/left1.png' %}" alt="" />
+    </div>
+    <div class="right-img">
+      <img src="{% static 'main/images/right1.png' %}" alt="" />
+    </div>
 
-  {% comment %} image gallery {% endcomment %}
+    <div class="products-content">
+      <div class="content-heading">
+        Presenting products and <br />
+        services that are right for you
+      </div>
+
+      <div class="row my-3 mt-4">
+        <div class="col-sm-6 mb-4">
+          <img src="{% static 'main/images/clarity_savings-line.svg' %}" alt="" />
+          <p class="text-bold text-white">Deposit</p>
+
+          <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore est nobis labore quisquam recusandae impedit. Laboriosam, harum illum magni ad provident atque officia, iste reiciendis recusandae, illo voluptate alias ipsam minima fugit.</p>
+        </div>
+        <div class="col-sm-6 mb-4">
+          <img src="{% static 'main/images/loan 1.svg' %}" alt="" />
+          <p class="text-bold text-white">Loan</p>
+          <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore est nobis labore quisquam recusandae impedit. Laboriosam, harum illum magni ad provident atque officia, iste reiciendis recusandae, illo voluptate alias ipsam minima fugit.</p>
+        </div>
+      </div>
+
+      <div class="row mb-5">
+        <div class="col-sm-6">
+          <img src="{% static 'main/images/Vector.svg' %}" alt="" />
+          <p class="text-bold text-white">Remittance</p>
+          <p class="desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore est nobis labore quisquam recusandae impedit. Laboriosam, harum illum magni ad provident atque officia, iste reiciendis recusandae, illo voluptate alias ipsam minima fugit.</p>
+        </div>
+        <div class="col-sm-6">
+          <img src="{% static 'main/images/Vector.png' %}" alt="" />
+          <p class="text-bold text-white">Other Services</p>
+          <p class="desc">वित्तीय योजना, सामुदायिक कार्यक्रमहरू, शैक्षिक कार्यशालाहरू, स्वयंसेवक अवसरहरू, सदस्यहरूको वकालत, स्रोत साझेदारी, नेटवर्किङ, र सहकारी विकासले सदस्यहरूलाई सामूहिक सफलताको लागि सशक्त बनाउँछ।</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% comment %}image gallery{% endcomment %}
 
   <div class="gallery d-flex flex-column">
     <div class="content">
-
-      <div class="intro-heading">
-        Gallery
-      </div>
+      <div class="intro-heading">Gallery</div>
       <div class="gallery-row-1">
         <div class="img-wrapper-1">
-          <img src="{% static 'main/images/img-gallery-1.webp' %}" alt="">
+          <img src="{% static 'main/images/img-gallery-1.webp' %}" alt="" />
         </div>
         <div class="img-wrapper-2">
-          <img src="{% static 'main/images/img-gallery-5.webp' %}" alt="">
+          <img src="{% static 'main/images/img-gallery-5.webp' %}" alt="" />
         </div>
       </div>
       <div class="gallery-row-2">
         <div class="img-wrapper-3">
-          <img src="{% static 'main/images/img-gallery-3.webp' %}" alt="">
+          <img src="{% static 'main/images/img-gallery-3.webp' %}" alt="" />
         </div>
         <div class="img-wrapper-4">
-          <img src="{% static 'main/images/img-gallery-4.webp' %}" alt="">
+          <img src="{% static 'main/images/img-gallery-4.webp' %}" alt="" />
         </div>
       </div>
     </div>
   </div>
 
-{% endblock maincontent %}
+  {% comment %}########################################################################################################{% endcomment %}
+  {% comment %}news events section{% endcomment %}
 
+  {% include 'main/sections/news_events.html' %}
+
+  {% comment %}news events section{% endcomment %}
+  {% comment %}########################################################################################################{% endcomment %}
+{% endblock %}
 
 {% block scripts %}
-<!-- swiper js  -->
-<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-<script src="{% static 'main/swiper.js' %}"></script>
-<!-- swiper js  -->
+  <!-- swiper js -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="{% static 'main/swiper.js' %}"></script>
+  <!-- swiper js -->
 
-<!-- navbar.js  -->
-<script src="{% static 'main/nav.js' %}"></script>
-<!-- navbar.js  -->
+  <!-- navbar.js -->
+  <script src="{% static 'main/nav.js' %}"></script>
+  <!-- navbar.js -->
 
-{% endblock scripts %}
+  <!-- news_events section.js -->
+  <script src="{% static 'main/sections/js/news_events.js' %}"></script>
+  <!-- news_events section.js -->
+{% endblock %}
